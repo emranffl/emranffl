@@ -7,7 +7,8 @@ on:
     # GitHub queues cron best-effort, so this can land late under load.
     - cron: "0 0 1 * *"
   # Manual trigger, so the list can be refreshed right after publishing a post
-  # instead of waiting for Friday.
+  # instead of waiting for the 1st. Also re-arms the schedule if GitHub has
+  # disabled it for repo inactivity.
   workflow_dispatch:
 
 # Least privilege: the job's only write is the README commit below.
