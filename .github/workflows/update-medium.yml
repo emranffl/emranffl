@@ -2,9 +2,10 @@ name: Update Medium posts
 
 on:
   schedule:
-    # Fridays, 00:00 UTC. GitHub queues cron on a best-effort basis, so this can
-    # land late under load — fine for a weekly refresh.
-    - cron: "0 0 * * 5"
+    # 1st of the month, 00:00 UTC. Not "first Friday" — cron ORs day-of-month
+    # against day-of-week, so `1-7 * 5` would fire on every Friday too.
+    # GitHub queues cron best-effort, so this can land late under load.
+    - cron: "0 0 1 * *"
   # Manual trigger, so the list can be refreshed right after publishing a post
   # instead of waiting for Friday.
   workflow_dispatch:
