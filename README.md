@@ -90,7 +90,17 @@ Currently interested in: MCP and agent tooling, cost-aware architecture, and the
 
 I write up the things that broke and why — incident forensics, migration post-mortems, and architecture notes.
 
-**[medium.com/@emranffl](https://medium.com/@emranffl)**
+<!-- MEDIUM:START -->
+
+- **[Common GraphQL Mistakes in Node.js Projects (And How to Avoid Them)](https://emranffl.medium.com/common-graphql-mistakes-in-node-js-projects-and-how-to-avoid-them-8cb095f0aa75)** — Jan 2026
+- **[How to Add AI Features to Your Node.js App (Without Losing Your Mind)](https://emranffl.medium.com/how-to-add-ai-features-to-your-node-js-app-without-losing-your-mind-d3db0c45bb80)** — Aug 2025
+- **[Mastering GraphQL Development with VSCode and Node.js](https://emranffl.medium.com/mastering-graphql-development-with-vscode-and-node-js-385fadb64006)** — Jan 2025
+- **[How to Start Coding: Beginner-Friendly Programming Languages](https://emranffl.medium.com/how-to-start-coding-beginner-friendly-programming-languages-bdfbe831e59e)** — Jan 2025
+- **[Cybersecurity Trends to Watch in 2025](https://emranffl.medium.com/cybersecurity-trends-to-watch-in-2025-da4dcfd817a6)** — Jan 2025
+
+[All posts →](https://medium.com/@emranffl)
+
+<!-- MEDIUM:END -->
 
 ## GitHub
 

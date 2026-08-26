@@ -1,0 +1,44 @@
+name: Update Medium posts
+
+on:
+  schedule:
+    # Fridays, 00:00 UTC. GitHub queues cron on a best-effort basis, so this can
+    # land late under load — fine for a weekly refresh.
+    - cron: "0 0 * * 5"
+  # Manual trigger, so the list can be refreshed right after publishing a post
+  # instead of waiting for Friday.
+  workflow_dispatch:
+
+# Least privilege: the job's only write is the README commit below.
+permissions:
+  contents: write
+
+concurrency:
+  group: update-medium
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Node is preinstalled on ubuntu-latest, but pin it so a runner-image
+      # bump can't move us off a version with built-in fetch.
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Refresh Writing section
+        run: node scripts/update-medium.mjs
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- README.md; then
+            echo "No new posts."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: refresh Medium posts" -- README.md
+          git push
