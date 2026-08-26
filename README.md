@@ -101,20 +101,3 @@ I write up the things that broke and why — incident forensics, migration post-
 [All posts →](https://medium.com/@emranffl)
 
 <!-- MEDIUM:END -->
-
-## GitHub
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=emranffl&show_icons=true&hide_border=true&hide_title=true&theme=github_dark&hide=issues" />
-    <img src="https://github-readme-stats.vercel.app/api?username=emranffl&show_icons=true&hide_border=true&hide_title=true&hide=issues" alt="GitHub stats for emranffl" height="150" />
-  </picture>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs?username=emranffl&layout=compact&hide_border=true&theme=github_dark&langs_count=6" />
-    <img src="https://github-readme-stats.vercel.app/api/top-langs?username=emranffl&layout=compact&hide_border=true&langs_count=6" alt="Most used languages" height="150" />
-  </picture>
-</p>
-
-<p align="center">
-  <sub>Also on <a href="https://fiverr.com/emranffl">Fiverr</a> and <a href="https://www.upwork.com/freelancers/~01579320e45147f320">Upwork</a> · open to interesting problems</sub>
-</p>
